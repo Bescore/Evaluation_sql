@@ -262,6 +262,9 @@ GRANT SELECT,DELETE ON `immobilier`.demande TO ' cda'@'localhost';
 show GRANTS for 'afpa'@'localhost';
 show GRANTS for 'cda'@'localhost';
 
+DROP USER  'afpa'@'localhost';
+DROP USER  'cda'@'localhost';
+
 /************************************************************************************/
 
 
