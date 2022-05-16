@@ -221,7 +221,7 @@ SELECT ville,prenom,email from personne p,demande d where p.idpersonne = d.idper
 bénéfice généré grâce aux frais d’agence et pour chaque agence (Alias : bénéfice, 
 classement : par ordre croissant des gains)
 */
-SELECT a.nom ,SUM(frais) as "bénéfice" from logement_agence la, agence a where la.idagence= a.idagence GROUP BY a.nom ORDER BY la.frais DESC;
+SELECT a.nom ,SUM(frais) as "bénéfice" from logement_agence la, agence a where la.idagence= a.idagence GROUP BY a.nom ORDER BY la.frais ASC;
 
 /*19.Affichez le prénom et la ville où se trouve le logement de chaque propriétaire*/
 
